@@ -2,3 +2,6 @@ theme: jekyll-theme-minimal
 
 plugins:
   - jekyll-feed
+
+title: Kido-th
+description: Chase everything you love in life.
