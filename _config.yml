@@ -3,7 +3,9 @@ plugins:
   - jekyll-feed
 
 title: Kidlo-th
-description: everything you love in life.
-logo: /assets/img/logo.png
-#show_downloads: true
+description: Chase everything you love in life.
+
+#logo: /assets/img/logo.png
+logo: /assets/img/fav.jpg
+#show_downloads: truegoogle_analytics:
 google_analytics:
