@@ -1,6 +1,14 @@
 ---
 layout: main
+title: "Home"
+permalink: /
 ---
+<p class="navigation-bar">
+  <b>Home</b>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/another-page.html">another-page</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/blogs.html">Blogs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/notes.html">Notes</a>
+</p>
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
@@ -95,10 +103,6 @@ end
 ### Small image
 
 ![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
 
 
 ### Definition lists can be used with HTML syntax.
