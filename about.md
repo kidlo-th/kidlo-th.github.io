@@ -11,7 +11,7 @@ permalink: /about.html
   <b>About</b>
 </p>
 
-# Notes
+# About
 
 Here lies all of my lecture notes. I am used to taking structured notes on things I learned about.
 

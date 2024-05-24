@@ -11,7 +11,7 @@ permalink: /archive.html
   <a href="/about.html">About</a>
 </p>
 
-# Blogs
+# Archive
 
 Sometimes, I write down what I learned, what I thought, what surprised me, and what I wanted to remember.
 
