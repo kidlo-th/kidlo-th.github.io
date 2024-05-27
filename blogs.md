@@ -2,14 +2,16 @@
 layout: main
 title: "Blogs"
 permalink: /blogs.html
+page_type: "Blogs"
 ---
-
+<!--
 <p class="navigation-bar">
   <a href="/index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <b>Blogs</b>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/archive.html">Archive</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/about.html">About</a>
 </p>
+-->
 
 <div style="text-align: center; padding-bottom: 10px;">
   <style>
