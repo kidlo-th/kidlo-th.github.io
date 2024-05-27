@@ -13,7 +13,7 @@ permalink: /about.html
 
 # About
 
-Here lies all of my lecture notes. I am used to taking structured notes on things I learned about.
+Here are some introductions about oneself, but there are currently not many advantages to list.
 
 ### Computer Science
 
