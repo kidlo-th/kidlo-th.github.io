@@ -16,10 +16,10 @@ permalink: /about.html
 
 Here are some introductions about oneself, but there are currently not many advantages to list.
 
-### Computer Science
+<!--### Computer Science
 
 ### Others
 
 ### Memorandum
 
-### Reading Records
+### Reading Records-->
