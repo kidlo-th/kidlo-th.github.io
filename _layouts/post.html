@@ -1,6 +1,90 @@
 ---
 layout: main
 ---
+<style>
+	#back-to-top-btn {
+		position: fixed;
+		/* 固定在页面底部 */
+		bottom: 50px;
+		/* 距离底部 20px */
+		right: 30px;
+		/* 距离右侧 20px */
+		z-index: 99;
+		/* 确保在最顶层 */
+		width: 50px;
+		/* 设置按钮宽度 */
+		height: 50px;
+		/* 设置按钮高度 */
+		border: none;
+		outline: none;
+		background-color: #d8d7d7;
+		color: rgb(148, 147, 147);
+		cursor: pointer;
+		border-radius: 50%;
+		/* 将按钮样式改为圆形 */
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	#back-to-top-btn svg {
+		width: 24px;
+		/* 设置箭头图标的大小 */
+		height: 24px;
+		fill: rgb(13, 13, 13);
+		/* 箭头颜色 */
+	}
+
+	#back-to-top-btn:hover {
+		background-color: #e4e1e1;
+	}
+</style>
+<!--<script>
+	// 当页面滚动到一定位置时显示返回顶部按钮
+	window.onscroll = function () { scrollFunction() };
+
+	function scrollFunction() {
+		if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			document.getElementById("back-to-top-btn").style.display = "block";
+		} else {
+			document.getElementById("back-to-top-btn").style.display = "none";
+		}
+	}
+
+	// 返回顶部的功能
+	function topFunction() {
+		document.body.scrollTop = 0; // For Safari
+		document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+</script>-->
+<script>
+	// 返回顶部的功能（带动画效果）
+	function topFunction() {
+		// 获取当前滚动位置
+		var currentScroll = document.documentElement.scrollTop || document.body.scrollTop;
+
+		// 如果当前滚动位置大于0，则执行动画
+		if (currentScroll > 0) {
+			// 使用 requestAnimationFrame 实现平滑滚动效果
+			window.requestAnimationFrame(topFunction);
+			// 将滚动位置向上移动一定距离，这里使用了一个简单的缓动函数
+			// 你也可以使用其他更复杂的缓动函数来实现更自然的动画效果
+			window.scrollTo(0, currentScroll - (currentScroll / 10));
+		}
+	}
+</script>
+<button onclick="topFunction()" id="back-to-top-btn" title="返回顶部">
+	<!-- <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+		stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+		class="feather feather-chevron-up">
+		<polyline points="18 15 12 9 6 15"></polyline>
+	</svg> -->
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+		<path
+			d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+		</path>
+	</svg>
+</button>
 
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
