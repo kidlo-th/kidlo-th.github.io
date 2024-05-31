@@ -12,7 +12,7 @@ permalink: /
 </p>
 -->
 
-Text
+NULL
 
 <!-- For Utterance comments -->
 <!--<script src="https://utteranc.es/client.js"
