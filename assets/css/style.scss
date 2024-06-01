@@ -174,7 +174,7 @@ th { color: #444; }
 img { max-width: 100%; }
 
 /* header { text-align: left; width: 210px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; } */
-header { text-align: left; width: 210px; float: left; position: fixed; top: 25px; left: 380px; -webkit-font-smoothing: subpixel-antialiased; }
+header { text-align: left; width: 210px; float: left; position: fixed; top: 25px; left: 21%; -webkit-font-smoothing: subpixel-antialiased; }
 
 header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 205px; }
 
@@ -196,7 +196,8 @@ header ul li + li + li { border-right: none; width: 89px; }
 
 header ul a strong { font-size: 14px; display: block; color: #222; }
 
-section { width: 820px; float: right; padding-bottom: 50px;}
+#section { width: 820px; float: right; padding-bottom: 50px;}
+section { width: 75%; float: right; padding-bottom: 50px;}
 
 small { font-size: 11px; }
 
