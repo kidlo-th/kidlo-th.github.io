@@ -11,6 +11,8 @@ page_type: "Blogs"
   <a href="/about.html">About</a>
 </p>
 
+> This page only displays a maximum of ten articles, Please refer to the <a href="/archive.html">Archive</a> for more information.
+
 <div style="text-align: center; padding-bottom: 10px;">
   <style>
     a.btn-rss {
@@ -32,14 +34,18 @@ page_type: "Blogs"
 ### Technical
 
 <ul>
+  {% assign count = 0 %}
   {% for category in site.categories %}
     {% if category[0] == "Technical" %}
       {% for post in category[1] %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a><br>
-          {{ post.date | date_to_string }} - {{ post.author }}<br>
-          <small>{{ post.excerpt }}</small>
-        </li>
+        {% if count < 10 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
+            {{ post.date | date_to_string }} - {{ post.author }}<br>
+            <small>{{ post.excerpt }}</small>
+          </li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     {% endif %}
   {% endfor %}
@@ -48,28 +54,36 @@ page_type: "Blogs"
 ### Personal
 
 <ul>
+  {% assign count = 0 %}
   {% for category in site.categories %}
     {% if category[0] == "Memo" %}
       {% for post in category[1] %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a><br>
-          {{ post.date | date_to_string }} - {{ post.author }}<br>
-          <small>{{ post.excerpt }}</small>
-        </li>
+        {% if count < 10 %}
+          <li>
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
+            {{ post.date | date_to_string }} - {{ post.author }}<br>
+            <small>{{ post.excerpt }}</small>
+          </li>
+          {% assign count = count | plus: 1 %}
+        {% endif %}
       {% endfor %}
     {% endif %}
   {% endfor %}
 </ul>
 
 <ul>
+  {% assign count = 0 %}
   {% for category in site.categories %}
     {% if category[0] == "Personal" %}
       {% for post in category[1] %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a><br>
-          {{ post.date | date_to_string }} - {{ post.author }}<br>
-          <small>{{ post.excerpt }}</small>
-        </li>
+        {% if count < 10 %}
+          <li> 
+            <a href="{{ post.url }}">{{ post.title }}</a><br>
+            {{ post.date | date_to_string }} - {{ post.author }}<br>
+            <small>{{ post.excerpt }}</small>
+          </li>
+          {% assign count = count | plus: 1 %}
+        {% endif %} 
       {% endfor %}
     {% endif %}
   {% endfor %}
