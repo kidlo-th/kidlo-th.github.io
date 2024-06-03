@@ -20,17 +20,18 @@ page_type: "Archive"
         }
 
         li {
-            height: 5px;
+            height: 5.5px;
             /* display: inline-block; */
             /* 字符间隔默认 */
             letter-spacing: normal;
         }
 
         h3 {
-			height: 2px;
-		}
+            height: 2px;
+        }
     </style>
 </div>
+
 # Archive
 
 Sometimes, I write down what I learned, what I thought, what surprised me, and what I wanted to remember.
