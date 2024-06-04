@@ -161,6 +161,8 @@ blockquote { border-left: 1px solid #e5e5e5; margin: 0; padding: 0 0 0 20px; fon
 
 code, pre { font-family: Monaco, Bitstream Vera Sans Mono, Lucida Console, Terminal, Consolas, Liberation Mono, DejaVu Sans Mono, Courier New, monospace; color: #333; }
 
+code.language-plaintext.highlighter-rouge { word-spacing: -4.6px; } 
+
 pre { padding: 8px 15px; background: #f8f8f8; border-radius: 5px; border: 1px solid #e5e5e5; overflow-x: auto; }
 
 table:not(.emailtable) { width: 100%; border-collapse: collapse; }
