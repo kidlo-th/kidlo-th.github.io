@@ -132,7 +132,9 @@
 
 .highlight { background-color: #f8f8f8; }
 
-body { background-color: #fff; padding: 20px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; }
+/* .wrap-outer{ margin-left: calc(100vw - 100%); } */
+
+body { background-color: #fff; padding: 20px; font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; color: #727272; font-weight: 400; margin-left: calc(100vw - 100%);}
 
 h1, h2, h3, h4, h5, h6 { color: #222; margin: 0 0 20px; }
 
@@ -175,8 +177,8 @@ th { color: #444; }
 
 img { max-width: 100%; }
 
-/* header { text-align: left; width: 210px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased; } */
-header { text-align: left; width: 210px; float: left; position: fixed; top: 25px; left: 21%; -webkit-font-smoothing: subpixel-antialiased; }
+header { text-align: left; width: 210px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased;}
+/* header { text-align: left; width: 21%; float: left; position: fixed; top: 25px; left: 21%; -webkit-font-smoothing: subpixel-antialiased; } */
 
 header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 205px; }
 
@@ -198,8 +200,8 @@ header ul li + li + li { border-right: none; width: 89px; }
 
 header ul a strong { font-size: 14px; display: block; color: #222; }
 
-#section { width: 820px; float: right; padding-bottom: 50px;}
-section { width: 75%; float: right; padding-bottom: 50px;}
+section { width: 820px; float: right; padding-bottom: 50px;}
+/* section { width: 75%; float: right; padding-bottom: 50px;} */
 
 small { font-size: 11px; }
 
@@ -259,7 +261,8 @@ align-items: center;
 
 .note-icon { vertical-align: middle; height: 16px; width: 16px; margin-right: 4px; }
 
-@media print, screen and (max-width: 960px) {
+/* @media print, screen and (max-width: 960px) { */
+@media print, screen and (max-width: 1100px) {
     div.wrapper { width: auto; margin: 0; }
     header, section, footer { float: none; position: static; width: auto; }
     section { border: 1px solid #e5e5e5; border-width: 1px 0; padding: 20px 0; margin: 0 0 20px; }

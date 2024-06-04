@@ -4,6 +4,12 @@ title: "Archive"
 permalink: /archive.html
 page_type: "Archive"
 ---
+<p class="navigation-bar">
+  <a href="/index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/blogs.html">Blogs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <b>Archive</b>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/about.html">About</a>
+</p>
 
 <div>
     <style>
@@ -14,17 +20,18 @@ page_type: "Archive"
         }
 
         li {
-            height: 5px;
+            height: 5.5px;
             /* display: inline-block; */
             /* 字符间隔默认 */
             letter-spacing: normal;
         }
 
         h3 {
-			height: 2px;
-		}
+            height: 2px;
+        }
     </style>
 </div>
+
 # Archive
 
 Sometimes, I write down what I learned, what I thought, what surprised me, and what I wanted to remember.
@@ -34,7 +41,6 @@ Sometimes, I write down what I learned, what I thought, what surprised me, and w
 
 {% for post in posts_by_year %}
   {% capture post_year %}{{ post.date | date: "%Y" }}{% endcapture %}
-
   {% if current_year != post_year %}
     {% if current_year %}
     {% endif %}

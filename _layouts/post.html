@@ -1,13 +1,22 @@
 ---
 layout: main
 ---
-<button onclick="topFunctionArrow()" id="back-to-top-btn" title="返回顶部">
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
-		<path
-			d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
-		</path>
-	</svg>
-</button>
+<p class="navigation-bar">
+  <a href="/index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/blogs.html">Blogs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/archive.html">Archive</a>&nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="/about.html">About</a>
+</p>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var backToTopLink = document.getElementById("back-to-top-link");
+    if (backToTopLink) {
+      backToTopLink.parentNode.removeChild(backToTopLink);
+    }
+  });
+</script>
+
 
 <h1>{{ page.title }}</h1>
 <p>{{ page.date | date_to_string }} - {{ page.author }}</p>
@@ -16,8 +25,15 @@ layout: main
 
 <p><strong>Please comment below anything you wanna say! 😉</strong></p>
 
+<button onclick="topFunctionArrow()" id="back-to-top-btn" title="返回顶部">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28">
+		<path
+			d="M11.9997 10.8284L7.04996 15.7782L5.63574 14.364L11.9997 8L18.3637 14.364L16.9495 15.7782L11.9997 10.8284Z">
+		</path>
+	</svg>
+</button>
 <script src="{{ "assets/js/return_top.js" | relative_url }}"></script>
-<script src="{{ "assets/js/header_fixed.js" | relative_url }}"></script>
+
 <!-- For Utterance comments -->
 <script src="https://utteranc.es/client.js"
         repo="kidlo-th/kidlo-th.github.io"

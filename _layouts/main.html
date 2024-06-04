@@ -12,7 +12,7 @@
     <![endif]-->
 
     <!-- Favicon -->
-    <link rel="icon" href="/assets/img/fav.jpg" type="image/jpg">
+    <link rel="icon" href="/assets/img/favicon.png" type="image/png">
 
     <!-- For MathJax -->
     {% if page.enable_math == "enable" %}
@@ -71,12 +71,12 @@
         </p>
       </header>
       <section>
-<p class="navigation-bar">
+<!--<p class="navigation-bar">
   <a href="/index.html">Home</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/blogs.html">Blogs</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/archive.html">Archive</a>&nbsp;&nbsp;|&nbsp;&nbsp;
   <a href="/about.html">About</a>
-</p>
+</p>-->
 
 
       {{ content }}
@@ -88,7 +88,7 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
           }
         </script>
-        <a href="javascript:topFunction();">Back to Top</a>
+        <a id="back-to-top-link" href="javascript:topFunction();">Back to Top</a>
       </p>
 
       </section>
