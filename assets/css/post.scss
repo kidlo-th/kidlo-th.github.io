@@ -177,30 +177,9 @@ th { color: #444; }
 
 img { max-width: 100%; }
 
-header { text-align: left; width: 210px; float: left; position: fixed; -webkit-font-smoothing: subpixel-antialiased;}
-/* header { text-align: left; width: 21%; float: left; position: fixed; top: 25px; left: 21%; -webkit-fmoothing: subpixel-antialiased; } */
-
-header ul { list-style: none; height: 40px; padding: 0; background: #f4f4f4; border-radius: 5px; border: 1px solid #e0e0e0; width: 205px; }
-
-header li { width: 89px; float: left; border-right: 1px solid #e0e0e0; height: 40px; }
-
-header li:first-child a { border-radius: 5px 0 0 5px; }
-
-header li:last-child a { border-radius: 0 5px 5px 0; }
-
-header ul a { line-height: 1; font-size: 11px; color: #676767; display: block; text-align: center; padding-top: 6px; height: 34px; }
-
-header ul a:hover, header ul a:focus { color: #675C5C; font-weight: bold; }
-
-header ul a:active { background-color: #f0f0f0; }
-
 strong { color: #222; font-weight: 700; }
 
-header ul li + li + li { border-right: none; width: 89px; }
-
-header ul a strong { font-size: 14px; display: block; color: #222; }
-
-section { width: 820px; float: right; padding-bottom: 50px;}
+section { width: 80%; margin: 0 auto; float: none; padding-bottom: 50px;}
 /* section { width: 75%; float: right; padding-bottom: 50px;} */
 
 small { font-size: 11px; }
@@ -209,15 +188,7 @@ hr { border: 0; background: #e5e5e5; height: 1px; margin: 0 0 20px; }
 
 footer { text-align: left; width: 210px; float: left; position: fixed; bottom: 50px; -webkit-font-smoothing: subpixel-antialiased; }
 
-#header-upper { max-width: 210px; margin-left: auto; margin-right: auto; }
-
-#header-lower { max-width: 210px; margin-left: auto; margin-right: auto; text-align: center; }
-
-#header-lower p.view { text-align: center; }
-
 table.emailtable { margin-left: auto; margin-right: auto; }
-
-#header-bottom { max-width: 210px; margin-left: auto; margin-right: auto; text-align: center; }
 
 #site-title-box { text-align: center; }
 
@@ -256,8 +227,6 @@ align-items: center;
 #back-to-top-btn:hover {background-color: #e4e1e1;}
 
 .emailtable-icon { padding-right: 6px; font-size: large; }
-
-.navigation-test { top: 20px;}
 
 .navigation-bar { text-align: right; font-size: 16px; }
 
