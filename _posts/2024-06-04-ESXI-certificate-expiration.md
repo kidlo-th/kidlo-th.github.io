@@ -41,7 +41,7 @@ We parse CSR content throught an online tool([CSR File Online Verification Tool]
 
 ### Create SSL certificate through OpenSSL
 
-We create SSL certificate through openssl[^2], So you need prepare the OpenSSL tool in advence. Execute the following command to create a certificate:
+We create SSL certificate through openssl[^2], So you need prepare the OpenSSL tool in advance. Execute the following command to create a certificate:
 
 ```shell
 [root@localhost ~]# cd /root
