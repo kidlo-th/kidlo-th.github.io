@@ -10,7 +10,6 @@ permalink: /
   <a href="/about.html">About</a>
 </p>
 
-
 NULL
 
 
