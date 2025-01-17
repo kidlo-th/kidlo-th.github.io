@@ -29,6 +29,9 @@ page_type: "Archive"
         h3 {
             height: 2px;
         }
+        .date {
+            font-family: "Monaco";
+        }
     </style>
 </div>
 
@@ -47,7 +50,9 @@ Sometimes, I write down what I learned, what I thought, what surprised me, and w
     {% assign current_year = post_year %}
    <h3>{{ current_year }}</h3>
   {% endif %}
-  <ul><li><a href="{{ post.url }}">{{ post.date | date: "%d %b %Y" }} -- {{ post.title }}</a></li></ul>
+  <ul><li><a href="{{ post.url }}">
+    <span class="date">{{ post.date | date: "%d %b %Y" }} -- {{ post.title }}</span>
+  </a></li></ul>
   {% if forloop.last %}
   {% endif %}
 {% endfor %}
