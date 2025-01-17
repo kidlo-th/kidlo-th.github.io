@@ -30,7 +30,8 @@ page_type: "Archive"
             height: 2px;
         }
         .date {
-            font-family: "Monaco";
+            font-family: "Consolas", "Courier", "Lucida Console";
+            <!-- font-family: "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; -->
         }
     </style>
 </div>
@@ -51,7 +52,7 @@ Sometimes, I write down what I learned, what I thought, what surprised me, and w
    <h3>{{ current_year }}</h3>
   {% endif %}
   <ul><li><a href="{{ post.url }}">
-    <span class="date">{{ post.date | date: "%d %b %Y" }} -- {{ post.title }}</span>
+    <span class="date">{{ post.date | date: "%d %b %Y" }}</span> -- {{ post.title }}
   </a></li></ul>
   {% if forloop.last %}
   {% endif %}
